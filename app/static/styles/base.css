@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    text-align: center;
+
+    color: #000000;
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+div, dl, dt, dd, form, h1, h2, h3, h4, h5, h6, img, ol, ul, li, table, th, td, p, span, a {
+    border: 0;
+    margin: 0
+}
+img, input {
+    border: none;
+    vertical-align: middle;
+}
+html {
+    overflow-y: scroll;
+}
+ul, ol {
+    list-style-type: none;
+}
+th, td, input {
+    font-size: 12px;
+}
+h3 {
+    font-size: 14px;
+}
+button {
+    border: none;
+    cursor: pointer;
+    font-size: 12px;
+    background-color: transparent;
+}
+select {
+    border-width: 1px;
+    _zoom: 1;
+    border-style: solid;
+    padding-top: 2px;
+    font-size: 12px;
+}
+.clear {
+    clear: both;
+    font-size: 1px;
+    height: 0;
+    visibility: hidden;
+    line-height: 0;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: #f60;
+}
+
+.grid_1440 {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.grid_1024 {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.grid_700 {
+    width: 700px;
+    margin: 0px auto;
+}
+
+
+
+
+/*.btn-top{
+    display:block;
+    width:50px;
+    height:50px;
+    background:#666 url("../images/btt.png") 8px -57px no-repeat;
+    margin-top:-100px;
+    text-indent:-9999em;
+    outline:0 none;
+    border-radius: 4px;
+    position:fixed;
+    bottom:80px;
+    left:80px;
+}*/
+.btn-top{
+/*    clear:both;*/
+    display:block;
+    
+    width:50px;
+    height:50px;
+    background:#666 url("../images/btt.png") 8px -57px no-repeat;
+    outline:0 none;
+    border-radius: 4px;
+    position:fixed !important;
+    position:absolute;
+/*    top:560px*/
+	top:expression(560+(ignoreMe=0?(navigator.appName=='Netscape'):(document.body.scrollTop))+'px') !important;
+	top:560px;
+	right:20px;
+
+}
+
+
+
+.btn-top:hover{
+    cursor:pointer;
+    background-color: #333;
+    background-position: 8px 13px;
+}

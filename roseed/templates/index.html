@@ -1,0 +1,162 @@
+<!-- saved from url=(0026)http://whoisleon.com/#home -->
+{%extends "base.html"%}
+{% load staticfiles %}
+{% load extra_tags%}
+{% load i18n %}
+{%block extrahead%}{{block.super}}
+<script type="text/javascript" src="{%static "js/base.js"%}"></script>
+
+<link type="text/css" href="{%static "styles/home.css"%}" rel="stylesheet" />
+{%endblock%}
+{%block content%}
+<div class="main" id="main">
+
+	<div class="logo"><img src="{%static "images/f_birdBlur1.png"%}" alt="石海生个人网站" width="200">
+		<div class="clear"></div>
+	</div>
+	<div class="grid_700 navigation">
+		<a href="#" class="works"></a>
+		<a href="#" class="aboutus"></a>
+		<a href="#" class="contactus"></a>
+	</div>
+
+	<div class="grid_700 title">
+		<img src="{%static "images/meandyou.png"%}" />
+	</div>
+	<div class="grid_700 info">
+		<p>
+			欢迎来到谷火的网站
+			<br />
+			以下是其介绍
+		</p>
+	</div>
+
+	<div class="leftbird">
+		<img src="{%static "images/n_bird1.png"%}">
+	</div>
+	<div class="grid_700 products">
+		<div class="products-list">
+			<div class="product1">
+				<ul>
+					<li>
+						<a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+					</li>
+				</ul>
+			</div>
+			<div class="product1">
+                <a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+            </div>
+			<div class="product1">
+				<a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+			</div>
+			<div class="product1">
+				<a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+			</div>
+			<div class="product1">
+				<a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+			</div>
+			<div class="product1">
+				<a href="#"><img src="{%static "images/portfolio1.png"%}" /></a>
+			</div>
+
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<!--   <a name="products"></a> -->
+
+	<div class="bottom"></div>
+
+	<div class="home">
+		<div class="grid_700 shows">
+
+			<div class="story">
+				<form class="storypost">{% csrf_token %}
+					<textarea class="storycontent">
+						
+					</textarea>
+					<div class="storyname">
+						用户名:
+						<input type="text" name="username" id="username"/>
+						<input type="submit" name="submit" class="submit" value="Submit">
+					</div>
+				
+				</form>
+			</div>
+
+			<div class="shows-list">
+
+				{%for st in stories%}
+				<div class="template" id="story-{{st.id}}">
+					<div class="begin">
+						<a href="#">{{st.username}}</a>
+						<span class="addtime">{{st.addtime|date:'Y-m-d'}}</span>
+					</div>
+
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{st.content}}
+					</p>
+				</div>
+				{%endfor%}
+			</div>
+
+		</div>
+
+		<div class="clear"></div>
+	</div>
+
+	<div class="bottom-home">
+		<img src="{%static "images/birdsWire2.png"%}" alt="" />
+	</div>
+
+	<div class="bottom-home">
+		<img src="{%static "images/birdsWire.png"%}" alt="" />
+	</div>
+
+	<!--     <a name="contactus"></a> -->
+	<div class="contact" >
+		<div class="grid_700 contacts">
+			<img id="loading" src="{%static "images/icon/loading.gif"%}" style="display:none;">
+			<form name="form" action="." method="POST" enctype="multipart/form-data">
+				{% csrf_token %}
+				<div class="name">
+					<label>选择上传的图片：</label>
+					<input id="fileToUpload" type="file" size="45" name="fileToUpload" class="input">
+				</div>
+				<div class="submit">
+					<input type="submit" class="button" name="button" id="buttonUpload" value='[上传]'/>
+				</div>
+				<div class="clear"></div>
+			</form>
+			{%for item in photos%}
+			<div class="photos">
+			   <div class="product1">
+                <ul>
+                    <li>
+                        <a href="#"><img src="{{item.photos.name|get_photo_url}}" /></a>
+
+                    </li>
+                </ul>
+             </div>
+			</div>
+			{%endfor%}
+		</div>
+
+	</div>
+
+	<div class="bottom" style="margin-top: -20px;"></div>
+</div>
+
+
+<div class="template" id="tp" style="display:none">
+	<div class="begin">
+		<a href="#">{username}</a>
+		<span class="addtime">{addtime}</span>
+	</div>
+
+	<p>
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{content}
+	</p>
+</div>
+<script type="text/javascript">BaseInit.init();</script>
+{%endblock%}

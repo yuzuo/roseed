@@ -1,0 +1,633 @@
+/*
+Theme Name: Who Is Leon?
+Theme URI: http://whoisleon.com/
+Description: Personal Website of Leon Truong, an Interaction Designer.
+Version: 3
+Tags: slide, scroll, birds, Leon Truong, portfolio
+Author: Leon Truong
+Author URI: http://whoisleon.com/
+License: Leon own this theme.  Do Not Copy!
+
+*/
+
+
+
+@font-face {
+	font-family: 'Museo300Regular';
+	src: url('fonts/museo300-regular-webfont.eot');
+	src: local('☺'), url('fonts/museo300-regular-webfont.woff') format('woff'), url('fonts/museo300-regular-webfont.ttf') format('truetype'), url('fonts/museo300-regular-webfont.svg#webfontXg3iPRGr') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+* {
+	outline-style: none;
+	outline-width: medium;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	color: #403D36;
+	background: #F0E7CA;
+	font-family: 'Museo300Regular';
+	height: 100%;
+}
+
+#wrapper {
+	background: url("../images/n_cloud1.jpg") repeat-x fixed -5% 400px #F0E7CA;
+}
+
+
+#home,
+#portfolio,
+#contact {
+	height: 100%;
+	min-height: 700px;
+	position: relative;
+
+}
+
+#home a,
+#portfolio a,
+#contact a {
+	background-color: inherit;
+	text-decoration: none;
+}
+
+.top {
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+.floatright {
+	float: right;
+}
+
+.content .textwidget:first-letter {
+	font-size: 2em;
+}
+
+.content {
+	left: 0;
+	overflow: hidden;
+	padding: 0 0 0 36px;
+	position: absolute;
+	top: 50%;
+	z-index: 4;
+	text-shadow: 1px 1px 1px #eaeaea;
+
+}
+
+.content .h1,
+.content .h2 {
+	display: block;
+}
+
+.bottom {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	z-index: 3;
+}
+
+.txtcenter {
+	text-align: center;
+}
+
+.textwidget {
+	line-height: 1.4em;
+}
+
+a.button {
+	border-bottom: 1px dashed #403D36;
+	color: #403D36;
+}
+
+a.button:hover,
+a.button:hover,
+a.button:hover {
+	border-bottom: 1px dotted #403D36;
+}
+
+/* HOME */
+
+#home {
+	background: url("../images/birdsWire.png") repeat-x scroll -20% 500px transparent;
+}
+
+#home .top {
+	background: url("../images/birdsWire2.png") repeat-x scroll 20% bottom transparent;
+	height: 470px;
+}
+
+#home .top img {
+	margin-top: 81px;
+}
+
+#home .content {
+	margin-top: -230px;
+	padding-left: 290px;
+	top: 370px !important;
+	width: 670px;
+}
+
+#home .content h1 {
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	background: transparent url('../images/hello.png') no-repeat scroll 0 0;
+	width: 700px;
+	height: 43px;
+}
+
+#home .content h2, #home .content h4 {
+	display: block;
+}
+
+#home .content .h2 {
+	margin: 11px 0 0 2px;
+}
+
+#home .bottom {
+	background: url("../images/kite.png") no-repeat scroll -30% 110% transparent;
+	bottom: 0;
+	height: 1005px;
+}
+
+/* Contact */
+
+#contact {
+	background: url("../images/contact_bg.png") no-repeat scroll 0 top transparent;
+	height: 848px;
+}
+
+#contact a {
+	background-color: inherit;
+}
+
+#contact .top {
+	height: 375px;
+}
+
+#contact .content {
+	margin-left: 280px;
+	margin-top: 160px;
+	top: 0 !important;
+	width: 660px;
+}
+
+#contact .bottom {
+background:none repeat scroll 0 0 #403D36;
+color:#F0E7CA;
+font-size:12px;
+height:50px;
+width:100%;
+}
+
+
+/*#contact .bottom a.love span {
+	text-indent: -9999px;
+	overflow: hidden;
+	display: block;
+}*/
+
+.lrgtxt {
+	font-size: 1em;
+}
+
+#contact .bottom .badge {
+	margin-left: 10px;
+}
+
+#contact .bottom .badge li {
+	float: left;
+	margin: 0 5px;
+	padding: 0;
+	line-height: 50px;
+}
+
+#contact .bottom .badge a.wp .hover, 
+#contact .bottom .badge a.apple .hover {
+	height: 36px;
+	position: relative;
+	display: block;
+	width: 36px;
+	background-repeat: no-repeat;
+}
+
+#contact .bottom .badge a.wp, 
+#contact .bottom .badge a.apple {
+	display: block;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height:50px;
+	line-height:50px;
+}
+
+#contact .bottom .badge a.wp, 
+#contact .bottom .badge a.wp .hover {
+	background-image: url(../images/footicons_wp.png);
+}
+
+#contact .bottom .badge a.apple, 
+#contact .bottom .badge a.apple.hover {
+	background-image: url(../images/footicons_apple.png);
+}
+
+#contact .bottom .badge .highlight a:hover,
+#contact .bottom.badge a .hover {
+	background-position: 0 -40px;
+}
+
+
+#usermessageb {
+	bottom:0;
+	font-size:12px;
+	height:35px;
+	margin-left:215px;
+	position:absolute;
+	text-align:center;
+width:180px;
+}
+
+.cf-ol {
+	margin: 0;
+	padding: 0;
+	list-style: inside;
+}
+
+.cf-ol li {
+	clear: both;
+	list-style: none outside none;
+	margin: 10px 0;
+	*padding: 10px 0;/*i Hate IE7*/
+}
+
+.cf-ol label {
+	float: left;
+	line-height: 35px;
+	margin-right: 10px;
+	text-align: right;
+	width: 100px;
+}
+
+.cf-ol input#cf_field_1, .cf-ol input#cf_field_2, .cf-ol input#cf_field_3, .cf-ol textarea {
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	background: none repeat scroll 0 0 transparent;
+	border: 1px dashed #403D36;
+	float: left;
+	margin-left: 10px;
+	padding: 8px;
+	width: 505px;
+}
+
+input#sendbutton {
+	clear: both;
+	float: right;
+	margin-right: 17px;
+	margin-top: 3px;
+	cursor: pointer;
+}
+
+input#sendbutton:hover {
+	-moz-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0px 0px rgba(0, 0, 0, 0.5);
+	color: #797568;
+}
+
+#sendbutton, #sendbutton:visited {
+	background: none repeat scroll 0 0 transparent;
+	-moz-border-radius: 5px 5px 5px 5px;
+	-webkit-border-radius: 5px;
+	border: 1px dashed #403D36;
+	color: #403D36;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 14px;
+	padding: 10px;
+	position: relative;
+	text-decoration: none;
+	width: 200px;
+	text-transform: uppercase;
+	line-height: 1;
+}
+
+.require {
+	color: #d62225;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.cf-ol input#cf_field_1:focus, .cf-ol input#cf_field_2:focus, .cf-ol input#cf_field_3:focus, .cf-ol textarea:focus {
+	background-color: transparent;
+	border-color: #403d36;
+}
+
+.cf_hidden, .linklove {
+	display: none;
+}
+
+ul.cf_li_text_err {
+	position: absolute;
+	top: 0;
+}
+
+/* PORTFOLIO */
+
+#portfolio {
+	height: 1000px
+}
+
+#portfolio .top {
+	background: url("../images/f_birdBlur1.png") no-repeat scroll -35% -90px transparent;
+	height: 400px;
+}
+
+#portfolio .top img.logo {
+	left: 15%;
+	position: absolute;
+	top: 35%;
+}
+
+#portfolio .bottom {
+	background: url("../images/b_birdBlur1.png") no-repeat scroll 90% 30% transparent;
+	height: 713px;
+	min-width: 1000px;
+}
+
+#portfolio .content {
+	left: 279px;
+	margin-left: 0;
+	margin-top: 0px;
+	padding: 0;
+	top: 160px;	
+}
+
+#portfolio .content h1 {
+	text-indent: -9999px;
+	display: block;
+	overflow: hidden;
+	background: transparent url('../images/meandyou.png') no-repeat scroll center center;
+	width: 700px;
+	height: 43px;
+	margin-top: 0;
+}
+
+/* JS resizes width acording to number of childs */
+
+#portfolio .content .portfolio ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+
+#portfolio .content .portfolio ul li {
+	margin: 0;
+	padding: 0;
+	width: 180px;
+	float: left;
+}
+
+#portfolio .content .portfolio ul li > img {
+	display: block;
+}
+
+#portfolio .content .portfolio ul li p {
+	padding: 0;
+	margin: 32px 15px 0 15px;
+	line-height: 18px;
+}
+
+/*Portfolio Listing*/
+
+ul.portimg {
+	margin: 10px 0;
+	padding: 0;
+	width: 700px;
+}
+
+.portimg li {
+	border: 1px dashed #403D36;
+	float: left;
+	margin: 3px;
+	padding: 0;
+}
+
+.portimg li a span {
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.portimg li.noborderLeft {
+	border-left: 0 none !important;
+}
+
+.portimg a.portimg1 .hover, .portimg a.portimg2 .hover, .portimg a.portimg3 .hover, .portimg a.portimg4 .hover, .portimg a.portimg5 .hover, .portimg a.portimg6 .hover {
+	height: 222px;
+	position: relative;
+	display: block;
+	width: 222px;
+	background-repeat: no-repeat;
+}
+
+.portimg a.portimg1, .portimg a.portimg2, .portimg a.portimg3, .portimg a.portimg4, .portimg a.portimg5, .portimg a.portimg6 {
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.portimg a.portimg1, 
+.portimg a.portimg1 .hover {
+	background-image: url(images/port/small/portfolio1.png);
+}
+
+.portimg a.portimg2, 
+.portimg a.portimg2 .hover {
+	background-image: url(images/port/small/portfolio8.png);
+}
+
+.portimg a.portimg3, 
+.portimg a.portimg3 .hover {
+	background-image: url(images/port/small/portfolio3.png);
+}
+
+.portimg a.portimg4, 
+.portimg a.portimg4 .hover {
+	background-image: url(images/port/small/portfolio7.png);
+}
+
+.portimg a.portimg5, 
+.portimg a.portimg5 .hover {
+	background-image: url(images/port/small/portfolio5.png);
+}
+
+.portimg a.portimg6, 
+.portimg a.portimg6 .hover {
+	background-image: url(images/port/small/portfolio6.png);
+}
+
+.portimg .highlight a:hover,
+.portimg a .hover {
+	background-position: 0 -227px;
+}
+
+a img {
+	border: none;
+}
+
+#contact .error {
+	background-color: inherit;
+}
+
+.navigation {
+	width: 681px;
+	height: 79px;
+	position: absolute;
+	left: 282px;
+	top: 40px;
+	z-index: 5;
+}
+
+.navigation, .badge, .portimg {
+	list-style: none;
+	list-style-image: none;
+	list-style-type: none;
+	list-style-position: outside;
+	margin: 0;
+	padding: 0;
+}
+
+.navigation li {
+	float: left;
+}
+
+.navigation a *, .badge a *, .portimg a * {
+	display: none;
+}
+
+.navigation a {
+	height: 79px;
+	position: relative;
+	display: block;
+	width: 227px;
+}
+
+.navigation a.selected {
+	background-position: 0 -79px;
+	width: 227px;
+}
+
+.navigation a.home .hover, .navigation a.portfolio .hover, .navigation a.contact .hover {
+	height: 79px;
+	position: relative;
+	display: block;
+	width: 227px;
+	background-repeat: no-repeat;
+}
+
+.navigation a.home, .navigation a.home .hover {
+	background-image: url(../images/nav_about2.png);
+}
+
+.navigation a.portfolio, .navigation a.portfolio .hover {
+	background-image: url(../images/nav_work2.png);
+}
+
+.navigation a.contact, .navigation a.contact .hover {
+	background-image: url(../images/nav_contact2.png);
+}
+
+/* .highlight will be remove if JS is enabled */
+
+.navigation .highlight a:hover, .navigation a .hover {
+	background-position: 0 -79px;
+	width: 227px;
+}
+
+#home .content ul.badge {
+	margin: 30px 0;
+	padding: 0;
+}
+
+#home .content .badge li {
+	float: left;
+	margin: 0;
+	padding: 0 30px;
+	line-height: 50px;
+}
+
+#home .content .badge li {
+	border-left: 1px dashed #403D36;
+}
+
+.badge li.noborderLeft {
+	border-left: 0 none !important;
+}
+
+.badge a.twitter .hover, .badge a.rss .hover, .badge a.facebook .hover, .badge a.flickr .hover, .badge a.pdf .hover, .badge a.mail .hover {
+	height: 56px;
+	position: relative;
+	display: block;
+	width: 68px;
+	background-repeat: no-repeat;
+}
+
+.badge a.twitter, .badge a.rss, .badge a.facebook, .badge a.flickr, .badge a.mail, .badge a.pdf {
+	display: block;
+	background-repeat: no-repeat;
+}
+
+.badge a.twitter, 
+.badge a.twitter .hover {
+	background-image: url(images/badge_twitter2.png);
+}
+
+.badge a.rss, 
+.badge a.rss .hover {
+	background-image: url(images/badge_rss.png);
+}
+
+
+.badge a.facebook, 
+.badge a.facebook .hover {
+	background-image: url(images/badge_facebook2.png);
+}
+
+.badge a.flickr, 
+.badge a.flickr .hover {
+	background-image: url(images/badge_flickr2.png);
+}
+
+.badge a.mail, 
+.badge a.mail .hover {
+	background-image: url(images/badge_mail2.png);
+}
+
+.badge a.pdf, 
+.badge a.pdf .hover {
+	background-image: url(images/badge_pdf2.png);
+}
+
+.badge .highlight a:hover,
+.badge a .hover {
+	background-position: 0 -56px;
+}

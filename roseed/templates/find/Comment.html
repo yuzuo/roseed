@@ -1,0 +1,5 @@
+<ul class="list-comments">
+{%for var in comments%}
+ <li><a href="/story/?memberId={{var.member.id}}">{{var.member}}</a>：{{var.comment}}<span class='date'> {{var.addtime|date:'Y-m-d H:m'}}</span></li>
+{%endfor%}
+</ul>

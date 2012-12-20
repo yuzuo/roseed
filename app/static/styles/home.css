@@ -1,0 +1,303 @@
+body {
+
+}
+
+
+.main{
+background: url("../images/n_cloud1.jpg") repeat-x fixed -5% 400px #F0E7CA;
+}
+.logo{
+    text-align:left;
+    width:200px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.navigation{
+	position:relative;
+	top:20px;
+    height:88px;
+}
+.navigation a{
+    margin:3px;
+    float:left;
+    border:1px dashed #000;
+    
+}
+
+.aboutus{
+    width:225px;
+    height:77px;
+    background: url("../images/nav_about2.png") no-repeat scroll 0 0;
+}
+
+/*.aboutus:hover{
+    width:225px;
+    height:77px;
+    background: url("../images/nav_about2.png") no-repeat scroll 0 -80px;
+}*/
+
+.ahover{
+	width:225px;
+    height:77px;
+    background: url("../images/nav_about2.png") no-repeat scroll 0 -80px;
+}
+
+.bhover{
+	width:225px;
+    height:77px;
+    background: url("../images/nav_work2.png") no-repeat scroll 0 -80px;
+}
+
+.chover{
+	width:225px;
+    height:77px;
+    background: url("../images/nav_contact2.png") no-repeat scroll 0 -80px;
+}
+
+
+
+
+
+
+.works{
+    width:225px;
+    height:77px;
+    background: url("../images/nav_work2.png") no-repeat scroll 0 0;
+}
+
+/*.works:hover{
+	
+    width:225px;
+    height:77px;
+    cursor:pointer;
+    background: url("../images/nav_work2.png") no-repeat scroll 0 -80px;
+}*/
+
+.contactus{
+    width:225px;
+    height:77px;
+    background: url("../images/nav_contact2.png") no-repeat scroll 0 0;
+}
+
+/*.contactus:hover{
+    width:225px;
+    height:77px;
+    background: url("../images/nav_contact2.png") no-repeat scroll 0 -80px;
+}*/
+
+
+.title{
+	
+    margin-top:20px;
+}
+
+.info{
+    margin-top:10px;
+    text-align:center;
+    font-size:25px;
+    font-weight:bold;
+}
+.info p{
+    color:#403D36;
+    text-shadow: #EAEAEA 1px 1px 1px 1px;
+
+}
+
+
+
+.leftbird{
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:191px;
+    top:360px;
+}
+
+
+.products{
+    margin-top:20px;
+    margin-bottom:30px;
+}
+
+.products-list div{
+    margin:5px;
+    float:left;
+}
+.products div a{
+
+    overflow:hidden;  
+}
+.product1{
+    overflow:hidden;
+    border:1px dashed #000;
+    width:220px;
+    height:230px;
+}
+
+
+.bottom {
+background:none repeat scroll 0 0 #403D36;
+color:#F0E7CA;
+font-size:12px;
+height:50px;
+width:100%;
+}
+
+
+
+.home{
+    margin-top:20px;
+    background: url("../images/kite.png") no-repeat scroll -30% 10% transparent;
+
+	min-height: 480px;
+
+
+}
+
+
+.story{
+	width:100%;
+	min-height: 300px;
+	border:1px dashed #000;
+	
+}
+
+.story form{
+	border:1px dashed #000;
+	height:270px;
+	margin:10px;
+}
+
+.storycontent{
+	width:520px;
+	height:160px;
+	margin:10px;
+	line-height:18px;
+	opacity: 0.3;
+	font-size:18px;
+	color:#000;
+	border:1px dashed #333;
+	border-top:0px;
+}
+.storycontent,.storyname input.storyname .submit
+{
+	filter:alpha(opacity=30);
+}
+.storyname input{
+	width:200px;
+	height:30px;
+	line-height:30px;
+	opacity:0.3;
+	color:#000;
+	border:1px dashed #333;
+	
+}
+.storyname input
+{
+	filter:alpha(opacity=30);
+}
+
+.storyname .submit{
+	width:100px;
+	margin:5px;
+	opacity:0.3;
+	cursor:pointer;
+	border:1px dashed #000000;
+}
+
+.storyname .submit
+{
+	filter:alpha(opacity=30);
+}
+
+
+
+.shows-list{
+	clear:both;
+	min-height: 500px;
+	max-height:750px;
+	overflow:hidden;
+}
+
+
+.contact {
+    background: url("../images/contact_bg.png") no-repeat scroll 0 top transparent;
+    height: 848px;
+}
+
+.contact .photos{
+    float:left;
+    margin:5px;
+}
+
+.contacts{
+	margin:auto;
+	border:1px dashed #111;
+	height:60px;
+	line-height:60px;
+	font-size:large;
+}
+.name{
+	
+	float:left;
+}
+
+.name .input{
+	opacity:0.5;
+	width:300px;
+	height:40px;
+	line-height:40px;
+	margin:8px;
+	border:1px dashed #000;
+	filter:alpha(opacity=50);
+}
+.submit .button{
+	cursor:pointer;
+	float:right;
+	border:1px dashed #000;
+	background-color:#666666;
+	font-size:40px;
+	opacity: 0.3;
+	filter: alpha(opacity=30);
+	width:100px;
+	height:50px;
+	line-height:50px;
+	display:block;
+	border-radius:3px;
+	margin:5px;
+}
+
+
+
+
+
+
+
+.template{
+	float:left;
+	margin:5px;
+    overflow:auto;
+    border:1px dashed #000;
+    width:220px;
+    height:230px;
+}
+.template div{
+	margin:20px;
+}
+.template div a{
+	float:left;
+}
+.template div span{
+	float:right;
+}
+.template p{
+	clear:both;
+	text-align:left;
+	font-size:18px;
+	color:#000000;
+}
+
+
+

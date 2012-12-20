@@ -1,0 +1,156 @@
+<!-- saved from url=(0026)http://whoisleon.com/#home -->
+{%extends "base.html"%}
+{% load staticfiles %}
+{% load extra_tags%}
+{% load i18n %}
+{%block extrahead%}{{block.super}}
+<link href="{%static "styles/style.css"%}" rel="stylesheet" />
+{%endblock%}
+{%block content%}
+<div id="wrapper">
+<!-- WHO IS LEON START -->
+    <div id="portfolio"> 
+            <ul class="navigation">
+                <li class="highlight"><a href="#home" class="home anchorLink"><span>Home</span></a></li>
+                <li class="highlight"><a href="#portfolio" class="portfolio selected anchorLink"><span>Portfolio</span></a></li>
+                <li class="highlight"><a href="#contact" class="contact anchorLink"><span>Contact</span></a></li>
+            </ul>
+        
+        
+            <div class="top">
+                <img src="{%static "images/n_bird1.png "%}" alt="Who am I?" class="logo" />
+            </div>
+            
+            <div class="content">
+            
+            <!-- PORTFOLIO CODE START -->
+            <div id="text-2" class="widget widget_text"><h1 class="widgettitle">Me + You = Amazing Result</h1>          <div class="textwidget"><p class="txtcenter">
+                欢迎来到码农-石海生的个人网站<br/>
+以下是其参与的项目. 如果你有什么需求， <a href="#contact" class="button anchorLink">联系我</a></p></div>
+        </div>          
+                <ul class="portimg">
+                
+                    <li class="highlight">
+                        <a class="fancy portimg1" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio1.jpg" title="My.AmericanHeart.org">
+                            <span>My.AmericanHeart.org</span>
+                        </a>
+                    </li>
+                    <li class="highlight">
+                        <a class="fancy portimg2" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio8.png" title="Cor Vitae">
+                            <span>Cor Vitae</span>
+                        </a>
+                    </li>
+                    <li class="highlight">
+                        <a class="fancy portimg3" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio3.jpg" title="American Heart Association">
+                            <span>American Heart Association</span>
+                        </a>
+                    </li>
+                    <li class="highlight">
+                        <a class="fancy portimg4" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio7.jpg" title="Colleges and Universities">
+                            <span>Colleges and Universities</span>
+                        </a>
+                    </li>
+                    <li class="highlight">
+                        <a class="fancy portimg5" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio5.gif" title="Dallas Museum of Art">
+                            <span>Dallas Museum of Art</span>
+                        </a>
+                    </li>
+                    <li class="highlight">
+                        <a class="fancy portimg6" href="http://whoisleon.com/wp-content/themes/whoisleon/images/port/large/portfolio6.jpg" title="iPhone Version of Heart.org">
+                            <span>iPhone Version of Heart.org</span>
+                        </a>
+                    </li>
+                </ul>
+        
+                
+            <!-- PORTFOLIO CODE END -->
+                
+            </div> <!-- End Content -->
+            
+            <div class="bottom"></div>
+    </div> <!-- End portfolio -->
+
+    <div id="home">
+        <ul class="navigation">
+            <li class="highlight"><a href="#home" class="home selected anchorLink"><span>Home</span></a></li>
+            <li class="highlight"><a href="#portfolio" class="portfolio anchorLink"><span>Portfolio</span></a></li>
+            <li class="highlight"><a href="#contact" class="contact anchorLink"><span>Contact</span></a></li>
+        </ul>
+        <div class="top"></div>
+        <div class="content">
+            <div id="text-4" class="widget widget_text"><h1 class="widgettitle">Guten Tag, my name is Leon.</h1>            <div class="textwidget">I am an Interaction Designer at American Heart Association. This portfolio represents a few of the things that inspire me about my <a href="#portfolio" class="button anchorLink">work</a>. </div>
+        </div>          <ul class="badge">
+                <li class="highlight noborderLeft"><a href="http://whoisleon.com/wp-content/themes/whoisleon/docs/resume.pdf" target="_blank" title="Get Leon's Resume" class="pdf"><span>Get the Resume</span></a></li>
+                <li class="highlight"><a href="#contact" target="_blank" class="mail anchorLink" title="Send Leon message"><span>Quicky Mail</span></a></li>
+                <li class="highlight"><a href="http://www.flickr.com/photos/jueno/" target="_blank" class="flickr" title="Find Leon on Flickr"><span>Flickr</span></a></li>
+                <li class="highlight"><a href="http://pixelmatters.posterous.com" target="_blank" class="rss" title="The Blog"><span>The Blog</span></a></li>
+                <li class="highlight"><a href="http://twitter.com/whoisleon" target="_blank" class="twitter" title="Leon is on Twitter too"><span>Twitter</span></a></li>
+                
+            </ul>
+        </div>
+        <div class="bottom"></div>
+    </div>
+        
+    <div id="contact">
+            <ul class="navigation">
+                <li class="highlight"><a href="#home" class="home anchorLink"><span>Home</span></a></li>
+                <li class="highlight"><a href="#portfolio" class="portfolio anchorLink"><span>Portfolio</span></a></li>
+                <li class="highlight"><a href="#contact" class="contact selected anchorLink"><span>Contact</span></a></li>
+            </ul>
+            <div class="top"></div>
+            <div class="content">
+                <div class="right">
+                    <div id="contactme">
+                    <div id="cforms-2" class="widget widgetcform"><h2 class="widgettitle"></h2>
+        <form enctype="multipart/form-data" action="/#usermessageb" method="post" class="cform" id="cformsform">
+        <ol class="cf-ol">
+            <li id="li--1" class=""><label for="cf_field_1"><span>Name</span></label><input type="text" name="cf_field_1" id="cf_field_1" class="single fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="reqtxt"><br class="clear"/></span></li>
+            <li id="li--2" class=""><label for="cf_field_2"><span>Email</span></label><input type="text" name="cf_field_2" id="cf_field_2" class="single fldemail fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="emailreqtxt"><br class="clear"/></span></li>
+            <li id="li--3" class=""><label for="cf_field_3"><span>Subject</span></label><input type="text" name="cf_field_3" id="cf_field_3" class="single fldrequired" value="" onfocus="clearField(this)" onblur="setField(this)"/><span class="reqtxt"><br class="clear"/></span></li>
+            <li id="li--4" class=""><label for="cf_field_4"><span>Message</span></label><textarea cols="30" rows="8" name="cf_field_4" id="cf_field_4" class="area fldrequired" onfocus="clearField(this)" onblur="setField(this)"></textarea><span class="reqtxt"><br class="clear"/></span></li>
+        </ol>
+        <fieldset class="cf_hidden">
+            <legend>&nbsp;</legend>
+            <input type="hidden" name="cf_working" id="cf_working" value="Talking%20to%20the%20code%20monkey...please%20wait."/>
+            <input type="hidden" name="cf_failure" id="cf_failure" value="Please%20make%20sure%20you%20correctly%20fill%20in%20all%20the%20field%20above."/>
+            <input type="hidden" name="cf_codeerr" id="cf_codeerr" value="Please%20double-check%20your%20verification%20code."/>
+            <input type="hidden" name="cf_customerr" id="cf_customerr" value="yyy"/>
+            <input type="hidden" name="cf_popup" id="cf_popup" value="nn"/>
+        </fieldset>
+        <p class="cf-sb"><input type="submit" name="sendbutton" id="sendbutton" class="sendbutton" value="Submit" onclick="return cforms_validate('', false)"/></p></form><p class="linklove" id="ll"><a href="http://www.deliciousdays.com/cforms-plugin"><em>cforms</em> contact form by delicious:days</a></p>       <div id="usermessageb" class="cf_info " ></div>
+</div>                  </div>
+                </div> <!-- RIGHT END -->
+            </div> <!-- content END -->
+            <div class="bottom">
+                <ul class="badge">  
+                    <li class="lrgtxt">conceived on a</li>
+                    <li class="highlight"><a href="http://whoisleon.com/wp-content/themes/whoisleon/images/mymac.jpg" target="_blank" class="fancy apple" title="My MacBook Pro...well, kinda."><span>Mac</span></a></li> 
+                    <li class="lrgtxt">spoiled by</li>
+                    <li class="highlight"><a href="http://wordpress.org" target="_blank" class="wp" title="I [heart] Wordpress!"><span>Wordpress</span></a></li>
+                    <li class="lrgtxt">loved by leon</li>
+                </ul>
+                <ul class="badge floatright">   
+                    <li class="lrgtxt">yes, this is copyrighted.</li>
+                </ul>
+                <br class="clear"/>
+            </div> <!-- END Bottom -->
+    </div> <!-- END contact -->
+<!-- Page END    -->    
+
+    <div id="footer"></div>
+</div> <!-- Wrapper End -->
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try{
+var pageTracker = _gat._getTracker("UA-9260156-1");
+pageTracker._trackPageview();
+} catch(err) {}
+</script>
+
+
+{%endblock%}

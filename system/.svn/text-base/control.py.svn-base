@@ -1,0 +1,25 @@
+#coding=utf8
+from __future__ import division
+
+from django.core.files.storage import FileSystemStorage
+#from Clothes.system.function import make_thumb
+import Image, os, time, random
+from Virplat import settings
+size = 160
+
+
+#import ImageFile
+class PdfStorage(FileSystemStorage):
+    def __init__(self, location=settings.MEDIA_ROOT, base_url=settings.MEDIA_URL):
+        super(PdfStorage, self).__init__(location, base_url)
+
+    #重写 _save方法        
+    def _save(self, name, content):#content=request.FILES['file']
+        name = name.replace('\\', '/')
+        ext = os.path.splitext(name)[1]
+        d = os.path.dirname(name)
+        fn = time.strftime('%Y%m%d%H%M%S')
+        fn = fn + '_%d' % random.randint(0, 100)
+        name = os.path.join(d, fn + ext)
+        name2 = super(PdfStorage, self)._save(name, content)
+        return name2

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/project/!svn/ver/1415/python/trunk/Virplat/system
+END
+__init__.py
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/project/!svn/ver/1292/python/trunk/Virplat/system/__init__.py
+END
+control.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/project/!svn/ver/1415/python/trunk/Virplat/system/control.py
+END
+storage.py
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/project/!svn/ver/1317/python/trunk/Virplat/system/storage.py
+END
